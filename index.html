@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Nessus Report Generator</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+    background-image: url("img/paper.png");
+}
+</style>
+</head>
+
+<body>
+  <p><a href="credits.html">Author Documentation</a></p>
+<table width="800" height="123" border="3">
+  <tbody>
+    <tr>
+      <td colspan="3"  align="center" id="tbl1" style="background-color: #000080; color:white;"><strong>Nessus Findings Generator</strong></td>
+    </tr>
+    <tr>
+      <td width="245" height="68" align="center" id="tbl3"><p>
+        <input type="button" name="btnConn" id="btnConn" value="Load XML File">
+        <br>
+        <progress id="progress" max="100" value="0" height="20"></progress>
+        <br>
+      </p></td>
+      <td width="284" align="center" id="tbl4">2) Customize: 
+        <select name="select" id="select" onchange="xmlCall()">
+          <option value="1">Medium and Greater</option>
+          <option value="2">High and Greater</option>
+          <option value="3">Critical Only</option>
+      </select></td>
+      <td width="245" align="center" id="tbl5">3) Finish: 
+        <input type="button" disabled name="btnCopy" id="btnCopy" value="Copy to Clipboard"></td>
+    </tr>
+  </tbody>
+</table>
+<table width="800" height="441" border="3">
+  <tbody>
+    <tr>
+      <th width="381" height="208" scope="col"><div id="pieDiv" sytel="width:40%">
+        <canvas id="myChart" style="display: block; width: 377px; height: 188px;" width="150" height="88"></canvas>
+      </div></th>
+      <th width="377" scope="col"><div id="critDiv" sytel="width:40%">
+        <canvas id="Critical" style="display: block; width: 377px; height: 188px;" width="150" height="88"></canvas>
+      </div></th>
+    </tr>
+    <tr>
+      <td><div id="highDiv" sytel="width:40%">
+        <canvas id="High" style="display: block; width: 377px; height: 188px;" width="150" height="88"></canvas>
+      </div></td>
+      <td><div id="medDiv" sytel="width:40%">
+        <canvas id="Medium" style="display: block; width: 377px; height: 188px;" width="150" height="88"></canvas>
+      </div></td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+<div id="mainDiv">Content for report will generate here.
+</div>
+<script type="text/javascript" src="js/graphs.js"></script>
+<script type="text/javascript" src="js/xml.js"></script>
+<script type="text/javascript" src="js/parse.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw==" crossorigin="anonymous"></script>
+</body>
+</html>

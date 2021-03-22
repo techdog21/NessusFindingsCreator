@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style type="text/css">
+body {
+    background-image: url(img/paper.png);
+}
+</style>
+</head>
+
+<body>
+<h1>Documentation Page</h1>
+<h3>Author Information</h3>
+<ul>
+  <li>Student: Jerry Craft</li>
+  <li>Class: CSCI-3 Web Programming Using JavaScript</li>
+  <li>Final Project (Graduate Candidate)</li>
+  <li>Harvard University</li>
+</ul>
+<h3>Purpose</h3>
+<p>At work, Tenable Nessus reports were difficult to get into  our penetration testing reports because the data was extensive and complicated  for most customers to read. The team and management both wanted to put this  data into a report in an automated fashion and select data points to present. </p>
+<p>As the graduate project opened up, and after seeing JavaScript's  power and all its components, I realized this issue could be solved by  developing a JavaScript website to parse the data.&nbsp;Simply having the data  sent to JavaScript in XML format and presenting it to be easily transferred to  a customer report, this project will live on after class as part of the  reporting process at Nth Generation.</p>
+<h3>Design Goals</h3>
+<ul>
+  <li><s>Open up the internal API for Nessus so an AJAX call could be made to Nessus files.</s> -- Tenable discontinued this featurefor the Consulting version of Nessus Professional. A full license to Tenable.IO is necessary as of this time. (not possible today) Nessus Professional does support exporting XML to a file. </li>
+  <li>Once the connection is confirmed, the app will then download  an XML version of the data since JSON reporting is not available in Nessus.  </li>
+  <li>Use JavaScript to parse the data, and get an array of Medium, High and Critical items.</li>
+  <li>Use HTML 5 for forms validation, and control if necessary.</li>
+  <li>Post the selected parsed data into the HTML DOM and style it to resemble a report structure.</li>
+  <li>Looping and other simple items are all native JavaScript.</li>
+  <li>Use ChartJS to perform to create the charts and graphs.</li>
+</ul>
+<h3>Required Project Functionality as per Final Project Outline</h3>
+<ul>
+  <li>DOM element creation, deletion, or modification.</li>
+  <li>DOM Transversal</li>
+  <li>Capturing and handling events</li>
+  <li>Creating and handling a data structure.</li>
+  <li>Form validation</li>
+  <li>Closures</li>
+  <li>AJAX</li>
+  <li><strong>Examples used: </strong>A page that collects data and formats it in a useful way.</li>
+</ul>
+<h3>Options used in this project</h3>
+<table width="100%" height="259" border="1">
+  <tbody>
+    <tr>
+      <td height="36" style="text-align: center">Javascript</td>
+      <td style="text-align: center">XML</td>
+      <td style="text-align: center">HTML 5</td>
+      <td style="text-align: center">ChartJS</td>
+      <td style="text-align: center">AJAX</td>
+    </tr>
+    <tr>
+      <td width="135" height="215" style="text-align: center"><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png" alt="File:JavaScript-logo.png - Wikimedia Commons" width="133" height="171" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;"></p></td>
+      <td width="135" style="text-align: center"><p><img src="https://cdn.iconscout.com/icon/free/png-512/xml-file-2330558-1950399.png" alt="Xml File Icon of Colored Outline style - Available in SVG, PNG, EPS, AI &  Icon fonts" width="127" height="173" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;"></p></td>
+      <td width="135" style="text-align: center"><p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ5Y-Y6qZrGqXEqLahm2itdC45nRB15sL0xA&usqp=CAU" jsname="Q4LuWd" alt="File:HTML5 Badge.svg - Wikimedia Commons" data-noaft="1" width="135" height="133"></p></td>
+      <td width="300" style="text-align: center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ciJt1ynih9qvbS1JOO62HMOWYhKFhio2Pw&usqp=CAU" jsname="Q4LuWd" alt="How to Visualize Data Beautifully With the Chart.js Library" data-noaft="1" width="213" height="141"></td>
+      <td width="300" style="text-align: center"><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/AJAX_logo_by_gengns.svg/1200px-AJAX_logo_by_gengns.svg.png" alt="File:AJAX logo by gengns.svg - Wikimedia Commons" width="236" height="80" data-noaft="1" jsname="HiaYvf" jsaction="load:XAeZkd;"></p></td>
+    </tr>
+  </tbody>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
